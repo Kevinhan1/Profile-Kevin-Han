@@ -1,0 +1,192 @@
+body {
+    font-family: 'Poppins', sans-serif; /* Nama font harus diapit oleh tanda kutip */
+    background-color: aliceblue;
+    margin: 0; 
+    padding: 0; 
+}
+
+.logo-container {
+    width: 250px; 
+    height: 115px; 
+    margin: 10px auto; 
+}
+
+.logo-container img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: contain; 
+}
+
+nav {
+    position: relative;
+    margin: 15px auto 0;
+    width: 300px;
+    height: 40px;
+    background: #d1d4df;
+    border-radius: 30px;
+    font-size: 0;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0, .1);
+}
+
+nav a {
+    font-size: 18px;
+    color: #1c1c1c;
+    text-decoration: none;
+    line-height: 40px;
+    position: relative;
+    z-index: 1; 
+    display: inline-block;
+    text-align: center;
+}
+
+nav .animation {
+    position: absolute;
+    height: 80%;
+    top: 10%;
+    left: 5px;
+    width: 80px;
+    z-index: 0;
+    background: #fff;
+    border-radius: 30px;
+    transition: all 0.5s ease 0s; 
+}
+
+a:nth-child(1) {
+    width: 80px;
+}
+
+nav .start-all, a:nth-child(1):hover~.animation {
+    width: 80px;
+    left: 5px;
+}
+
+a:nth-child(2) {
+    width: 115px;
+}
+
+nav .start-about, a:nth-child(2):hover~.animation {
+    width: 115px;
+    left: 80px;
+}
+
+a:nth-child(3) {
+    width: 105px;
+}
+
+nav .start-social, a:nth-child(3):hover~.animation {
+    width: 95px;
+    left: 200px;
+}
+
+
+.container2{
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 50px auto;
+    margin-top: 10px;
+}
+.Box {
+    width: 40% ; 
+    height: 180px;
+    padding: 20px;
+    margin: 50px 10px 50px 0;
+    border-radius: 30px;
+    background-color: #ffffff;
+}
+.Box.One p{
+    font-size: 18px;
+    font-family: 'Century Gothic';
+    font-style: italic;
+    margin: 1px 20px 20px 10px;
+    color: #1c1c1c;
+    text-decoration: none;
+    position: relative;
+    z-index: 1; 
+    justify-content: space-around;
+    text-align: left;
+}
+.Box.One img{
+    width: 23%;
+    margin: 10px 20px 0 10px;
+}
+.Box.Two h5{
+    font-size: 24px;
+    font-family: 'Planet Kosmos';
+    font-style: italic;
+    margin: 10px 10px 20px 2px;
+    color: #1c1c1c;
+    text-decoration: none;
+    position: relative;
+    z-index: 1; 
+    justify-content: space-around;
+    text-align: left;
+}
+.Box.Two p{
+    font-size: 18px;
+    font-family: 'Century Gothic';
+    font-style: italic;
+    margin: 10px 20px 20px 10px;
+    color: #1c1c1c;
+    text-decoration: none;
+    position: relative;
+    z-index: 1; 
+    justify-content: space-around;
+    text-align: left;
+}
+
+
+.container3{
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 50px auto;
+    margin-top: 10px;
+}
+.thumbnail1 img{
+    width: 100%;
+    height: 200px; 
+    margin: 20px 40px 100px 0;
+    margin-top: -90px;
+    border-radius: 30px;
+}
+.thumbnail2 img{
+    width: 100%;
+    height: 200px; 
+    margin: 20px 40px 100px 10px;
+    margin-top: -90px;
+    border-radius: 30px;
+}
+
+@media ( max-width: 600px ) {
+    .container2{
+        display: flex;
+    }
+    .Box.One {
+        width: 50%;
+        height: 500px;
+        align-items: center;
+    }
+    .Box.One p{
+        margin: 300px 20px 20px 20px;
+    }
+    .Box.Two {
+        width: 50% ;
+        height: 500px;
+    }
+    .container3{
+        display: flex;
+    }
+    .thumbnail1 img{
+        width: 100% ;
+        margin: 20px 40px 310px 10px;
+        height: 200px;
+    }
+    .thumbnail2 img{
+        width: 100% ;
+        margin: 20px 20px 310px 10px;
+        height: 200px;
+    }
+}
